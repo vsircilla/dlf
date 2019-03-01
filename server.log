@@ -1,0 +1,492 @@
+/home/vinay/workspace/dlf
+Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 115, in read_chunk_len
+    _len = int(line.strip(), 16)
+ValueError: invalid literal for int() with base 16: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 110, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 222, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 531, in parse
+    return self.cls(form), self.cls(files)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/datastructures.py", line 409, in __init__
+    for key, value in mapping or ():
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 529, in <genexpr>
+    form = (p[1] for p in formstream if p[0] == 'form')
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 488, in parse_parts
+    for ellt, ell in self.parse_lines(file, boundary, content_length):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 400, in parse_lines
+    terminator = self._find_terminator(iterator)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 328, in _find_terminator
+    for line in iterator:
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wsgi.py", line 1086, in make_line_iter
+    first_item = next(_iter, '')
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wsgi.py", line 1045, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 128, in readinto
+    self._len = self.read_chunk_len()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 117, in read_chunk_len
+    raise IOError('Invalid chunk header')
+OSError: Invalid chunk header
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 115, in read_chunk_len
+    _len = int(line.strip(), 16)
+ValueError: invalid literal for int() with base 16: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 25, in api_root
+    if request.method == 'POST' and request.files['image']:
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/utils.py", line 73, in __get__
+    value = self.func(obj)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wrappers.py", line 571, in files
+    self._load_form_data()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/wrappers.py", line 168, in _load_form_data
+    RequestBase._load_form_data(self)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wrappers.py", line 385, in _load_form_data
+    mimetype, content_length, options)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 205, in parse
+    content_length, options)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 117, in wrapper
+    chunk = stream.read(1024 * 64)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 128, in readinto
+    self._len = self.read_chunk_len()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 117, in read_chunk_len
+    raise IOError('Invalid chunk header')
+OSError: Invalid chunk header
+/home/vinay/workspace/dlf
+Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 115, in read_chunk_len
+    _len = int(line.strip(), 16)
+ValueError: invalid literal for int() with base 16: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 110, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 222, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 531, in parse
+    return self.cls(form), self.cls(files)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/datastructures.py", line 409, in __init__
+    for key, value in mapping or ():
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 529, in <genexpr>
+    form = (p[1] for p in formstream if p[0] == 'form')
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 488, in parse_parts
+    for ellt, ell in self.parse_lines(file, boundary, content_length):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 400, in parse_lines
+    terminator = self._find_terminator(iterator)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 328, in _find_terminator
+    for line in iterator:
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wsgi.py", line 1086, in make_line_iter
+    first_item = next(_iter, '')
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wsgi.py", line 1045, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 128, in readinto
+    self._len = self.read_chunk_len()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 117, in read_chunk_len
+    raise IOError('Invalid chunk header')
+OSError: Invalid chunk header
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 115, in read_chunk_len
+    _len = int(line.strip(), 16)
+ValueError: invalid literal for int() with base 16: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 25, in api_root
+    if request.method == 'POST' and request.files['image']:
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/utils.py", line 73, in __get__
+    value = self.func(obj)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wrappers.py", line 571, in files
+    self._load_form_data()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/wrappers.py", line 168, in _load_form_data
+    RequestBase._load_form_data(self)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wrappers.py", line 385, in _load_form_data
+    mimetype, content_length, options)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 205, in parse
+    content_length, options)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 117, in wrapper
+    chunk = stream.read(1024 * 64)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 128, in readinto
+    self._len = self.read_chunk_len()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 117, in read_chunk_len
+    raise IOError('Invalid chunk header')
+OSError: Invalid chunk header
+/home/vinay/workspace/dlf
+Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 115, in read_chunk_len
+    _len = int(line.strip(), 16)
+ValueError: invalid literal for int() with base 16: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 110, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 222, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 531, in parse
+    return self.cls(form), self.cls(files)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/datastructures.py", line 409, in __init__
+    for key, value in mapping or ():
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 529, in <genexpr>
+    form = (p[1] for p in formstream if p[0] == 'form')
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 488, in parse_parts
+    for ellt, ell in self.parse_lines(file, boundary, content_length):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 400, in parse_lines
+    terminator = self._find_terminator(iterator)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 328, in _find_terminator
+    for line in iterator:
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wsgi.py", line 1086, in make_line_iter
+    first_item = next(_iter, '')
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wsgi.py", line 1045, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 128, in readinto
+    self._len = self.read_chunk_len()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 117, in read_chunk_len
+    raise IOError('Invalid chunk header')
+OSError: Invalid chunk header
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 115, in read_chunk_len
+    _len = int(line.strip(), 16)
+ValueError: invalid literal for int() with base 16: ''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 25, in api_root
+    if request.method == 'POST' and request.files['image']:
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/utils.py", line 73, in __get__
+    value = self.func(obj)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wrappers.py", line 571, in files
+    self._load_form_data()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/wrappers.py", line 168, in _load_form_data
+    RequestBase._load_form_data(self)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/wrappers.py", line 385, in _load_form_data
+    mimetype, content_length, options)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 205, in parse
+    content_length, options)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/formparser.py", line 117, in wrapper
+    chunk = stream.read(1024 * 64)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 128, in readinto
+    self._len = self.read_chunk_len()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/werkzeug/serving.py", line 117, in read_chunk_len
+    raise IOError('Invalid chunk header')
+OSError: Invalid chunk header
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+Exception on /status [GET]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+/home/vinay/workspace/dlf
+Exception on /status [GET]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "api.py", line 41, in status_api
+    return json.dumps({'filename':img_name,'carbs':'10','salt':'10','liquid':'2'})
+NameError: name 'img_name' is not defined
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+Exception on /status [GET]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "t.py", line 41, in status_api
+    return json.dumps({'filename':img_name,'carbs':'10','salt':'10','liquid':'2'})
+NameError: name 'img_name' is not defined
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+Exception on /status [GET]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "t.py", line 41, in status_api
+    return jsonify(
+NameError: name 'jsonify' is not defined
+/home/vinay/workspace/dlf
+Exception on /status [GET]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "t.py", line 41, in status_api
+    return jsonify(
+NameError: name 'jsonify' is not defined
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+Exception on /status [GET]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "t.py", line 44, in status_api
+    if my_file.exists():
+NameError: name 'my_file' is not defined
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/image.png
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+Processing request for id2
+Found results for id2
+/home/vinay/workspace/dlf
+Processing request for id1
+Not found results for id1
+/home/vinay/workspace/dlf
+Processing request for id1
+Not found results for id:1
+/home/vinay/workspace/dlf
+Processing request for id2
+Found results for id:2
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/2585873.png
+/home/vinay/workspace/dlf
+Exception on /status [GET]
+Traceback (most recent call last):
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/home/vinay/lib/pyenv/lib/python3.6/site-packages/flask/app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+/home/vinay/workspace/dlf
+Processing request for id1
+Results not found  for id:1
+/home/vinay/workspace/dlf
+Processing request for id2
+Found results for id:2
+/home/vinay/workspace/dlf
+Processing request for id1
+Results not found  for id:1
+/home/vinay/workspace/dlf
+Processing request for id2
+Found results for id:2
+/home/vinay/workspace/dlf
+Processing request for id2
+Found results for id:2
+/home/vinay/workspace/dlf
+Processing request for id1
+Results not found  for id:1
+/home/vinay/workspace/dlf
+Processing request for id1
+Results not found  for id:1
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/i.jpg
+/home/vinay/workspace/dlf
+Processing request for id1
+Results not found  for id:1
+/home/vinay/workspace/dlf
+Processing request for id1
+Not found results for id:1
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/613156.png
+/home/vinay/workspace/dlf
+Processing request for id1
+Results not found  for id:1
+/home/vinay/workspace/dlf
+/home/vinay/workspace/dlf/uploads/
+saving /home/vinay/workspace/dlf/uploads/7379172.png
+/home/vinay/workspace/dlf
+Processing request for id7379172
+Results not found  for id:7379172
